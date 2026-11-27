@@ -1,0 +1,215 @@
+Name,Category,Perspective,Topic,Dataset,Metric,Release Date,Best result,Resources,Licenses
+3CB,I,Offensive,Cyberattack capabilities,15 tasks (11 public),Exact match → ASR,2024/10,100% ASR (pass@1) [own evaluation],"Paper: https://arxiv.org/pdf/2410.09114
+Code and dataset: https://github.com/apartresearch/3cb",Code and dataset: no license information
+AdvCUA,I,Offensive,Cyberattack capabilities of CUAs,"140 tasks
+• 40 directly malicious tasks
+• 74 TTP-based malicious tasks
+• 26 end-to-end kill chains","• Rule-based matching of tool-execution indicators in agent traces → bypass success rate (BSR)
+• Hard-coded evaluation protocols → ASR",2025/10,"• 55% ASR (direct, pass@5) [paper: https://arxiv.org/pdf/2510.06607v2#page=8]
+• 83.78% ASR (TTP, pass@5) [paper: https://arxiv.org/pdf/2510.06607v2#page=8]
+• 50% ASR (end-to-end, pass@5) [paper: https://arxiv.org/pdf/2510.06607v2#page=8]","Paper: https://arxiv.org/pdf/2510.06607v2
+Code and dataset: https://github.com/SaFo-Lab/AdvCLI",Code and dataset: no license information
+AgentHarm,"R, I",Both,Safety evaluation: harmful agent capabilities across eleven domains,"• 110 tasks/440 with augmentations: detailed or open-ended, with or without a hint about the first function to call
+• 2 jailbreak techniques: forced tool call, universal jailbreak","• Manually written conditions, partially involving semantic LLM-as-a-Judge → harm score
+• Refusal LLM-as-a-Judge → refusal rate",2024/10,82.2% harm score on harmful behaviors [paper: https://arxiv.org/pdf/2410.09024#page=18],"Paper: https://arxiv.org/pdf/2410.09024
+Code: https://github.com/UKGovernmentBEIS/inspect_evals/tree/main/src/inspect_evals/agentharm
+Dataset: https://huggingface.co/datasets/ai-safety-institute/AgentHarm","Code: MIT License
+Dataset: MIT License with an additional clause"
+AICrypto,K,Both,Cryptography: fundamental knowledge,135 MCQ,Exact match → accuracy,2025/07,97.8% accuracy [paper: https://arxiv.org/pdf/2507.09580v6#page=4],"Paper: https://arxiv.org/pdf/2507.09580
+Code: https://github.com/wangyu-ovo/aicrypto-agent
+Dataset: https://huggingface.co/datasets/yuuwwang/aicrypto/tree/main","Code: no license information
+Dataset: MIT License"
+AICrypto,T,Defensive,Cryptographic proofs,30 proof tasks,LLM-as-a-Judge → success score,2025/07,85.4% success score (best-of-3) [paper: https://arxiv.org/pdf/2507.09580v6#page=4],"Paper: https://arxiv.org/pdf/2507.09580
+Code: https://github.com/wangyu-ovo/aicrypto-agent
+Dataset: https://huggingface.co/datasets/yuuwwang/aicrypto/tree/main","Code: no license information
+Dataset: MIT License"
+AICrypto,I,Both,Exploitation of cryptographic vulnerabilities,150 CTF,Exact match → ASR,2025/07,56% ASR (pass@3) [paper: https://arxiv.org/pdf/2507.09580v6#page=4],"Paper: https://arxiv.org/pdf/2507.09580
+Code: https://github.com/wangyu-ovo/aicrypto-agent
+Dataset: https://huggingface.co/datasets/yuuwwang/aicrypto/tree/main","Code: no license information
+Dataset: MIT License"
+AI-Pentest-Benchmark,I,Defensive,Penetration testing capabilities of LLMs,13 VMs with 152 subtasks,"Exact match against flag, (manual) check for sudo → TSR",2024/10,42.76% TSR [paper: https://arxiv.org/pdf/2410.17141v3#page=5],"Paper: https://arxiv.org/pdf/2410.17141v3
+Code: https://github.com/isamu-isozaki/AI-Pentest-Benchmark
+Dataset: https://github.com/Ignitetechnologies/CTF-Difficulty","Code: MIT License
+Dataset: no license information"
+AutoPenBench,I,Defensive,Penetration testing capabilities,"33 CTF tasks
+• 22 in vitro cases
+• 11 real-world cases","• Exact match against flag → TSR
+• Milestones, LLM-as-a-Judge → progress rate",2024/10,21% TSR; 39% progress rate [paper: https://arxiv.org/pdf/2410.03225#page=10],"Paper: https://arxiv.org/pdf/2410.03225
+Code and dataset: https://github.com/lucagioacchini/auto-pen-bench",Code and dataset: MIT License
+b³,R,Defensive,Robustness of LLMs against evasion attacks,210 attacks,"Task-specific metrics (exact match/ROUGE-L, recall, profanity detection, embedding similarity) → vulnerability score",2025/10,10.9% vulnerability score [leaderboard: https://b3.lakera.ai/#leaderboard],"Paper: https://arxiv.org/pdf/2510.22620
+Code: https://github.com/UKGovernmentBEIS/inspect_evals/tree/main/src/inspect_evals/b3
+Dataset: https://huggingface.co/datasets/Lakera/b3-agent-security-benchmark-weak","Code: MIT License
+Dataset: custom research-only license"
+CASTLE,T,Both,Vulnerability detection in C programs,"250 programs covering 25 CWEs (10 per CWE, 6 vulnerable, 4 non-vulnerable)","Exact match against vulnerability value/CWE labels → CASTLE Score (max. 1,250)",2025/03,977 CASTLE score [paper: https://arxiv.org/pdf/2503.09433#page=11],"Paper: https://arxiv.org/pdf/2503.09433
+Code: https://github.com/CASTLE-Benchmark/CASTLE-Source
+Dataset: https://github.com/CASTLE-Benchmark/CASTLE-Benchmark","Code: MIT License
+Dataset: MIT License"
+CTIArena,K,Defensive,CTI reasoning: root cause mapping (CTI-RCM),100 QA (structured),Exact match → accuracy,2025/10,100% accuracy (augmented) [paper: https://arxiv.org/pdf/2510.11974v1#page=7],"Paper: https://arxiv.org/pdf/2510.11974v1
+Code and dataset: https://github.com/ccsnow127/ctiarena-release",Code and dataset: no license information
+CTIArena,K,Defensive,CTI reasoning: weakness instantiation mapping (CTI-WIM),71 QA (structured),Exact match → accuracy,2025/10,100% accuracy (augmented) [paper: https://arxiv.org/pdf/2510.11974v1#page=7],"Paper: https://arxiv.org/pdf/2510.11974v1
+Code and dataset: https://github.com/ccsnow127/ctiarena-release",Code and dataset: no license information
+CTIArena,K,Defensive,CTI reasoning: attack technique derivation (CTI-ATD),100 QA (structured),Exact match → accuracy,2025/10,100% accuracy (augmented) [paper: https://arxiv.org/pdf/2510.11974v1#page=7],"Paper: https://arxiv.org/pdf/2510.11974v1
+Code and dataset: https://github.com/ccsnow127/ctiarena-release",Code and dataset: no license information
+CTIArena,K,Defensive,CTI reasoning: exploitation surface discovery (CTI-ESD),100 QA (structured),Exact match → accuracy,2025/10,100% accuracy (augmented) [paper: https://arxiv.org/pdf/2510.11974v1#page=7],"Paper: https://arxiv.org/pdf/2510.11974v1
+Code and dataset: https://github.com/ccsnow127/ctiarena-release",Code and dataset: no license information
+CTIArena,T,Defensive,Threat report understanding: reconstructing campaign storylines (CTI-CSC),60 QA (unstructured),LLM-as-a-Judge → accuracy,2025/10,72.1% accuracy (RAG) [paper: https://arxiv.org/pdf/2510.11974v1#page=8],"Paper: https://arxiv.org/pdf/2510.11974v1
+Code and dataset: https://github.com/ccsnow127/ctiarena-release",Code and dataset: no license information
+CTIArena,T,Defensive,Threat report understanding: profiling threat actors across reports (CTI-TAP),60 QA (unstructured),LLM-as-a-Judge → accuracy,2025/10,78.9% accuracy (RAG) [paper: https://arxiv.org/pdf/2510.11974v1#page=8],"Paper: https://arxiv.org/pdf/2510.11974v1
+Code and dataset: https://github.com/ccsnow127/ctiarena-release",Code and dataset: no license information
+CTIArena,T,Defensive,Threat report understanding: tracing malware variants across reports (CTI-MLA),30 QA (unstructured),LLM-as-a-Judge → accuracy,2025/10,47.8% accuracy (RAG) [paper: https://arxiv.org/pdf/2510.11974v1#page=8],"Paper: https://arxiv.org/pdf/2510.11974v1
+Code and dataset: https://github.com/ccsnow127/ctiarena-release",Code and dataset: no license information
+CTIArena,T,Defensive,CTI mapping: attributing attack behaviours in threat reports to MITRE ATT&CK techniques (CTI-ATA),50 QA (hybrid),Exact match → accuracy,2025/10,90% accuracy (RAG) [paper: https://arxiv.org/pdf/2510.11974v1#page=8],"Paper: https://arxiv.org/pdf/2510.11974v1
+Code and dataset: https://github.com/ccsnow127/ctiarena-release",Code and dataset: no license information
+CTIArena,T,Defensive,CTI mapping: attributing vulnerable conditions in threat reports to CWE weaknesses (CTI-VCA),120 QA (hybrid),Exact match → accuracy,2025/10,76% accuracy (RAG) [paper: https://arxiv.org/pdf/2510.11974v1#page=8],"Paper: https://arxiv.org/pdf/2510.11974v1
+Code and dataset: https://github.com/ccsnow127/ctiarena-release",Code and dataset: no license information
+CTIBench,K,Defensive,CTI knowledge (CTI-MCQ),"2,500 MCQ",Exact match → accuracy,2024/06,85.3% [own evaluation],"Paper: https://arxiv.org/pdf/2406.07599
+Code and dataset: https://github.com/maveryn/cti-bench",Code and dataset: CC BY-NC-SA 4.0 license
+CTIBench,T,Defensive,CTI: CVE cause mapping (CTI-RCM),"1,000 tasks",Exact match → accuracy,2024/06,75.3% accuracy [paper: https://arxiv.org/pdf/2601.21051#page=8],"Paper: https://arxiv.org/pdf/2406.07599
+Code and dataset: https://github.com/maveryn/cti-bench",Code and dataset: CC BY-NC-SA 4.0 license
+CTIBench,T,Defensive,CTI: CVSS generation (CTI-VSP),"1,000 tasks",CVSS score → MAD,2024/06,1.09 MAD [paper: https://arxiv.org/pdf/2406.07599#page=7],"Paper: https://arxiv.org/pdf/2406.07599
+Code and dataset: https://github.com/maveryn/cti-bench",Code and dataset: CC BY-NC-SA 4.0 license
+CTIBench,T,Defensive,CTI: technique extraction (CTI-ATE),60 instances comprising 397 attack techniques,Micro-F1,2024/06,69.6% micro-F1 [paper: https://arxiv.org/pdf/2601.21051#page=8],"Paper: https://arxiv.org/pdf/2406.07599
+Code and dataset: https://github.com/maveryn/cti-bench",Code and dataset: CC BY-NC-SA 4.0 license
+CTIBench,T,Defensive,CTI: threat actor mapping (CTI-TAA),50 tasks,"Exact match (+ aliases) → correct accuracy, plausible accuracy",2024/06,52% correct accuracy; 86% plausible accuracy [paper: https://arxiv.org/pdf/2406.07599#page=7],"Paper: https://arxiv.org/pdf/2406.07599
+Code and dataset: https://github.com/maveryn/cti-bench",Code and dataset: CC BY-NC-SA 4.0 license
+CUAHarm,I,Offensive,Cyberattack capabilities of CUAs,104 tasks (52 computer-use tasks that require CUAs to directly interact with the computer),Rule-based verifiable rewards → TSR,2025/07,"• 90.4% TSR (computer-use tasks) [paper: https://arxiv.org/pdf/2508.00935#page=15]
+• 67.3% TSR (malicious prompts) [paper: https://arxiv.org/pdf/2508.00935#page=15]","Paper: https://arxiv.org/pdf/2508.00935
+Code and dataset: https://github.com/db-ol/CUAHarm",Code and dataset: Apache License 2.0
+CVE-Bench,I,Offensive,Cyberattack capabilities in the context of web applications,40 tasks (provided in zero-day and one-day settings),Rule-based check against 8 attack goals → ASR,2025/03,"• 62.5% ASR (pass@1, zero-day) [blog: https://getfailsafe.com/cvebench#2-the-number]
+• 70% ASR (pass@1, one-day) [blog: https://getfailsafe.com/cvebench#2-the-number]","Paper: https://arxiv.org/pdf/2503.17332
+Code and dataset: https://github.com/uiuc-kang-lab/cve-bench",Code and dataset: Apache License 2.0
+Cybench,I,Offensive,Cyberattack capabilities,40 CTF tasks,"Exact match against flag or subtask QA → ASR (based on unguided performance, subtask-guided performance, subtask-performance)",2024/08,"100% ASR (unguided, 35-task subset) [leaderboard: https://cybench.github.io/]; 93% ASR [blog: https://mistral.ai/news/mistral-large-4/]","Paper: https://arxiv.org/pdf/2408.08926
+Code and dataset: https://github.com/andyzorigin/cybench",Code and dataset: Apache License 2.0
+CyberGym,I,Offensive,Vulnerability exploitation (PoC generation) in C/C++ programs,"1,507 tasks (provided at 4 difficulty levels)",Sanitiser check against PoC execution on vulnerable and fixed code → TSR,2025/06,99.2% TSR (level 1) [blog: https://lyrie.ai/cybergym],"Paper: https://arxiv.org/pdf/2506.02548
+Code and dataset: https://github.com/sunblaze-ucb/cybergym",Code and dataset: Apache License 2.0
+CyberMetric,K,Both,Common cybersecurity knowledge,"10,000 MCQ (datasets with 80, 500 and 2,000 questions also available)",Exact match → accuracy,2024/02,91.2% accuracy (10k) [own evaluation],"Paper: https://arxiv.org/pdf/2402.07688
+Code and dataset: https://github.com/cybermetric/CyberMetric",Code and dataset: no license information
+CyberPersistBench,I,Offensive,Persistence capabilities of LLMs,"396 tasks:
+• 203 core single-host tasks
+• 65 additional multi-host tasks
+• 128 core-task variants with active native defences enabled",Deterministic execution checks/L1–L6 stage-wise persistence score using task-specific verification protocol → TSR,2026/09,44.8% TSR (pass@3) [paper: https://arxiv.org/pdf/2609.36573#page=6],"Paper: https://arxiv.org/pdf/2609.36573
+Code and dataset: https://anonymous.4open.science/r/CyberPersistBench-0EC5",Code and dataset: Apache License 2.0
+CyberSecEval 1,R,Offensive,Cyberattack-assistance safety: compliance with requests to assist cyberattacks,"1,000 cyberattack-assistance prompts based on 10 MITRE ATT&CK categories","Pattern matcher, LLM-as-a-Judge → cyberattack helpfulness compliance rate",2023/12,38% compliance rate (19% with LLamaGuard) [paper: https://arxiv.org/pdf/2408.01605#page=18],"Paper: https://arxiv.org/pdf/2509.20166, https://arxiv.org/pdf/2408.01605, https://arxiv.org/pdf/2404.13161, https://arxiv.org/pdf/2312.04724
+Code and datasets: https://github.com/meta-llama/PurpleLlama/tree/main/CybersecurityBenchmarks, https://huggingface.co/datasets/facebook/cyberseceval3-visual-prompt-injection","Code and datasets: MIT License
+Code and datasets: MIT License"
+CyberSecEval 1,T,Defensive,Secure code generation: insecure coding practices in instruction-following and code-completion settings,"1,916 instruct + 1,916 autocomplete test cases",Insecure code detector (ICD) → pass rate; BLEU reported additionally,2023/12,"• ≈90% autocomplete pass rate [paper: https://arxiv.org/pdf/2312.04724#page=6]
+• ≈70% instruct pass rate [paper: https://arxiv.org/pdf/2312.04724#page=6]","Paper: https://arxiv.org/pdf/2509.20166, https://arxiv.org/pdf/2408.01605, https://arxiv.org/pdf/2404.13161, https://arxiv.org/pdf/2312.04724
+Code and datasets: https://github.com/meta-llama/PurpleLlama/tree/main/CybersecurityBenchmarks, https://huggingface.co/datasets/facebook/cyberseceval3-visual-prompt-injection","Code and datasets: MIT License
+Code and datasets: MIT License"
+CyberSecEval 2,R,Both,False refusals: inappropriate rejection of benign cybersecurity requests,750 borderline but benign cybersecurity prompts,Keyword-based refusal detection → false refusal rate,2024/04,≈0% false refusal rate [paper: https://arxiv.org/pdf/2404.13161#page=12],"Paper: https://arxiv.org/pdf/2509.20166, https://arxiv.org/pdf/2408.01605, https://arxiv.org/pdf/2404.13161, https://arxiv.org/pdf/2312.04724
+Code and datasets: https://github.com/meta-llama/PurpleLlama/tree/main/CybersecurityBenchmarks, https://huggingface.co/datasets/facebook/cyberseceval3-visual-prompt-injection","Code and datasets: MIT License
+Code and datasets: MIT License"
+CyberSecEval 2,R,Defensive,Robustness against textual prompt injections,251 test cases,LLM-as-a-Judge → ASR,2024/04,12.93% ASR (but: inconsistent reporting) [paper: https://arxiv.org/pdf/2404.13161#page=12]; 1.6% ASR [own evaluation],"Paper: https://arxiv.org/pdf/2509.20166, https://arxiv.org/pdf/2408.01605, https://arxiv.org/pdf/2404.13161, https://arxiv.org/pdf/2312.04724
+Code and datasets: https://github.com/meta-llama/PurpleLlama/tree/main/CybersecurityBenchmarks, https://huggingface.co/datasets/facebook/cyberseceval3-visual-prompt-injection","Code and datasets: MIT License
+Code and datasets: MIT License"
+CyberSecEval 2,R,Defensive,Robustness against code interpreter abuse,500 malicious prompts (100 each across 5 abuse categories),LLM-as-a-Judge → malicious prompt compliance rate,2024/04,1% compliance rate (0% with LlamaGuard) [paper: https://arxiv.org/pdf/2408.01605#page=17],"Paper: https://arxiv.org/pdf/2509.20166, https://arxiv.org/pdf/2408.01605, https://arxiv.org/pdf/2404.13161, https://arxiv.org/pdf/2312.04724
+Code and datasets: https://github.com/meta-llama/PurpleLlama/tree/main/CybersecurityBenchmarks, https://huggingface.co/datasets/facebook/cyberseceval3-visual-prompt-injection","Code and datasets: MIT License
+Code and datasets: MIT License"
+CyberSecEval 2,T,Offensive,"Vulnerability exploitation in C/C++, Python, JavaScript and SQLite programs",585 tasks,Automatic task-specific scoring (0-1) → mean exploitation score,2024/04,90.4% mean exploitation score [own evaluation],"Paper: https://arxiv.org/pdf/2509.20166, https://arxiv.org/pdf/2408.01605, https://arxiv.org/pdf/2404.13161, https://arxiv.org/pdf/2312.04724
+Code and datasets: https://github.com/meta-llama/PurpleLlama/tree/main/CybersecurityBenchmarks, https://huggingface.co/datasets/facebook/cyberseceval3-visual-prompt-injection","Code and datasets: MIT License
+Code and datasets: MIT License"
+CyberSecEval 3,R,Defensive,Robustness against visual prompt injections,"1,000 test cases",LLM-as-a-Judge → ASR,2024/08,—,"Paper: https://arxiv.org/pdf/2509.20166, https://arxiv.org/pdf/2408.01605, https://arxiv.org/pdf/2404.13161, https://arxiv.org/pdf/2312.04724
+Code and datasets: https://github.com/meta-llama/PurpleLlama/tree/main/CybersecurityBenchmarks, https://huggingface.co/datasets/facebook/cyberseceval3-visual-prompt-injection","Code and datasets: MIT License
+Code and datasets: MIT License"
+CyberSecEval 3,I,Offensive,Spear phishing: persuading simulated victims to fulfil phishing objectives through multi-turn conversations,"250 multi-turn phishing scenarios across four objectives (malware download, security-information gathering, data theft, credential theft)",LLM-as-a-Judge → mean persuasion score,2024/08,3.98/5 mean persuasion score [paper: https://arxiv.org/pdf/2408.01605#page=7],"Paper: https://arxiv.org/pdf/2509.20166, https://arxiv.org/pdf/2408.01605, https://arxiv.org/pdf/2404.13161, https://arxiv.org/pdf/2312.04724
+Code and datasets: https://github.com/meta-llama/PurpleLlama/tree/main/CybersecurityBenchmarks, https://huggingface.co/datasets/facebook/cyberseceval3-visual-prompt-injection","Code and datasets: MIT License
+Code and datasets: MIT License"
+CyberSecEval 3,I,Offensive,Cyberattack capabilities: executing a ransomware attack from initial access to exfiltration and impact,Simulated ransomware attack environment with 37 challenge criteria,Consensus of three LLM judges → proportion of attack challenge criteria completed,2024/08,—,"Paper: https://arxiv.org/pdf/2509.20166, https://arxiv.org/pdf/2408.01605, https://arxiv.org/pdf/2404.13161, https://arxiv.org/pdf/2312.04724
+Code and datasets: https://github.com/meta-llama/PurpleLlama/tree/main/CybersecurityBenchmarks, https://huggingface.co/datasets/facebook/cyberseceval3-visual-prompt-injection","Code and datasets: MIT License
+Code and datasets: MIT License"
+CyberSecEval 4,I,Defensive,Automated vulnerability patching in C/C++ programs,136 tasks,Execution-based validation through fuzzing and differential testing → share of verified patches,2025/04,11.5% verified patches (Lite-subset) [blog: https://engineering.fb.com/2025/04/29/ai-research/autopatchbench-benchmark-ai-powered-security-fixes/],"Paper: https://arxiv.org/pdf/2509.20166, https://arxiv.org/pdf/2408.01605, https://arxiv.org/pdf/2404.13161, https://arxiv.org/pdf/2312.04724
+Code and datasets: https://github.com/meta-llama/PurpleLlama/tree/main/CybersecurityBenchmarks, https://huggingface.co/datasets/facebook/cyberseceval3-visual-prompt-injection","Code and datasets: MIT License
+Code and datasets: MIT License"
+CyberSecEval 4,T,Defensive,Malware analysis: identifying malicious activities and malware behaviour,609 MCQ with potentially multiple correct answers,"Exact-set match → accuracy, Jaccard similarity score",2025/09,33.51% accuracy; ≈60% Jaccard similarity score [paper: https://arxiv.org/pdf/2509.20166#page=21],"Paper: https://arxiv.org/pdf/2509.20166, https://arxiv.org/pdf/2408.01605, https://arxiv.org/pdf/2404.13161, https://arxiv.org/pdf/2312.04724
+Code and datasets: https://github.com/meta-llama/PurpleLlama/tree/main/CybersecurityBenchmarks, https://huggingface.co/datasets/facebook/cyberseceval3-visual-prompt-injection","Code and datasets: MIT License
+Code and datasets: MIT License"
+CyberSecEval 4,T,Defensive,Threat intelligence reasoning: interpreting unstructured threat reports and extracting actionable information,588 MCQ with potentially multiple correct answers,"Exact-set match → accuracy, Jaccard similarity score",2025/09,52.87% accuracy; ≈68% Jaccard similarity score [paper: https://arxiv.org/pdf/2509.20166#page=22],"Paper: https://arxiv.org/pdf/2509.20166, https://arxiv.org/pdf/2408.01605, https://arxiv.org/pdf/2404.13161, https://arxiv.org/pdf/2312.04724
+Code and datasets: https://github.com/meta-llama/PurpleLlama/tree/main/CybersecurityBenchmarks, https://huggingface.co/datasets/facebook/cyberseceval3-visual-prompt-injection","Code and datasets: MIT License
+Code and datasets: MIT License"
+DebugBench,T,Defensive,"Bug detection and repair in Python, Java, and C++","4,253 programs (1,438 in C++, 1,401 in Java, and 1,414 in Python)",LeetCode test cases → pass rate,2024/01,88.91% pass rate (Python) [paper: https://arxiv.org/pdf/2511.08052#page=3],"Paper: https://arxiv.org/pdf/2401.04621
+Code: https://github.com/thunlp/debugbench
+Dataset: https://huggingface.co/datasets/Rtian/DebugBench","Code: Apache License 2.0
+Dataset: Apache License 2.0"
+ExploitBench,I,Offensive,Vulnerability exploitation in the context of the V8 JavaScript engine,41 tasks,Deterministic oracles for 16 exploitation capabilities → capability score,2026/05,100% capability coverage (= 16/16 mean capability score) [blog: https://openai.com/de-DE/index/gpt-6-astra/],"Paper: https://arxiv.org/pdf/2605.14153
+Code and dataset: https://github.com/exploitbench/exploitbench",Code and dataset: MIT License
+ExploitGym,I,Offensive,"Vulnerability exploitation in the context of userspace programs, the V8 JavaScript engine, and the Linux kernel",898 tasks,"Exact match against flag, LLM-as-a-Judge to ensure that the intended vulnerability was exploited → TSR",2026/05,42.4% TSR [blog: https://openai.com/de-DE/index/gpt-6-astra/],"Paper: https://arxiv.org/pdf/2605.11086
+Code and dataset: https://github.com/sunblaze-ucb/exploitgym",Code and dataset: Apache License 2.0
+Google DeepMind In-house CTF,I,Offensive,Cyberattack capabilities,13 CTF tasks,Exact match against flag → ASR,2024/03,92.3% ASR (pass@1) [own evaluation],"Paper: https://arxiv.org/pdf/2403.13793
+Code and dataset: https://github.com/google-deepmind/dangerous-capability-evaluations",Code and dataset: Apache License 2.0
+HackWorld,I,Offensive,Cyberattack capabilities of CUAs,36 CTF tasks,"Fuzzy flag matching with an edit distance threshold of 5 characters, accommodating OCR errors → ASR",2025/10,16.7% ASR (100 steps) [paper: https://arxiv.org/pdf/2510.12200#page=7],"Paper: https://arxiv.org/pdf/2510.12200
+Code and dataset: https://github.com/GUI-Agent/HackWorld",Code and dataset: Apache License 2.0
+InterCode-CTF,I,Offensive,Cyberattack capabilities,100 CTF tasks,Exact match against flag → ASR,2023/06,95% ASR (pass@5) [paper: https://arxiv.org/pdf/2412.02776#page=1],"Paper: https://arxiv.org/pdf/2306.14898, https://www.researchgate.net/publication/379925136_Language_Agents_as_Hackers_Evaluating_Cybersecurity_Skills_with_Capture_the_Flag
+Code and dataset: https://github.com/princeton-nlp/intercode",Code and dataset: MIT License
+LLM Persistence Benchmark,I,Offensive,Persistence capabilities of LLMs,31 prompts,Check for file creation after reboot → TSR,2024/05,—,"Paper: https://apartresearch.com/sprints/projects/cybersecurity-persistence-benchmark
+Code and dataset: https://github.com/Jazhyc/llm-persistence-benchmark",Code and dataset: no license information
+MalwareBench,R,Offensive,Malicious code generation: jailbreak robustness and malware-generation capabilities,"3,520 instructions (combination of 320 manually written malicious-code prompts and 11 jailbreak methods)","LLM-as-a-Judge → refusal rate, malicious-code quality score (1-4, 0 for refusals)",2025/06,77.29% refusal rate [paper: https://arxiv.org/pdf/2506.10022#page=6],"Paper: https://arxiv.org/pdf/2506.10022
+Dataset: https://github.com/MAIL-Tele-AI/MalwareBench",Dataset: no license information
+MHBench,I,Offensive,Cyberattack capabilities in multi-host environments,"10 attack environments, each containing 25 to 50 hosts with various vulnerabilities","Verification of reached attack graph states using keyword matching → full ASR, number of achieved goals, and attack graph coverage (%)",2025/01,50% full ASR (pass@5) [paper: https://arxiv.org/pdf/2501.16466v3#page=10],"Paper: https://arxiv.org/pdf/2501.16466v3
+Code and dataset: https://github.com/bsinger98/MHBench",Code and dataset: MIT License
+NYU CTF Bench,I,Offensive,Cyberattack capabilities,200 CTF tasks,Exact match against flag → ASR,2024/06,59% ASR [paper: https://arxiv.org/pdf/2604.17159v1#page=4],"Paper: https://arxiv.org/pdf/2406.05590
+Code and dataset: https://github.com/nyu-llm-ctf/nyu_ctf_bench",Code and dataset: GPL v2
+OS-Harm,"R, I",Both,"Safety of CUAs: intentional misuse, prompt injection attacks, and model misbehaviour",150 tasks,"LLM-as-a-Judge → percentage of unsafe execution traces, TSR",2025/06,21% unsafe traces [paper: https://arxiv.org/pdf/2506.14866v1#page=7],"Paper: https://arxiv.org/pdf/2506.14866v1
+Code and dataset: https://github.com/tml-epfl/os-harm",Code and dataset: Apache License 2.0
+PACEbench,I,Offensive,Cyberattack capabilities in single-host and multihost environments,"32 attack environments:
+• 17 A-CVE
+• 7 B-CVE
+• 5 C-CVE
+• 3 D-CVE",Exact match against flag → PACEbench score (weighted sum of category-specific success scores),2025/10,0.241 PACEbench score [paper: https://arxiv.org/pdf/2510.11688#page=8],"Paper: https://arxiv.org/pdf/2510.11688
+Code and dataset: https://github.com/RyuKosei/PACEbench",Code and dataset: MIT License
+PrimeVul,T,Both,Vulnerability detection in C/C++ programs,"235,768 functions (6,968 vulnerable):
+• Train: 184,427 functions (5,574 vulnerable)
+• Validation: 25,430 functions (699 vulnerable)
+• Test: 25,911 functions (695 vulnerable)",Binary vulnerability classification → Vulnerability Detection Score (VD-S),2024/03,72.4% VD-S (FPR ≤0.5%) [paper: https://arxiv.org/pdf/2507.08540#page=7],"Paper: https://arxiv.org/pdf/2403.18624
+Code: https://github.com/DLVulDet/PrimeVul
+Dataset: https://drive.google.com/drive/folders/19iLaNDS0z99N8kB_jBRTmDLehwZBolMY","Code: MIT License
+Dataset: no license information"
+SEC-bench,I,Both,Vulnerability exploitation (PoC generation) and patching in C/C++ programs,200 tasks,"• PoC generation: check for expected sanitizer report → TSR
+• Patching: check for project compilation and no sanitizer-reported vulnerability → TSR",2025/06,"• 18% TSR (PoC) [leaderboard: https://sec-bench.github.io/#sec-bench]
+• 75% TSR (patching) [leaderboard: https://sec-bench.github.io/#sec-bench]","Paper: https://arxiv.org/pdf/2506.11791
+Code: https://github.com/SEC-bench/SEC-bench-Pro
+Dataset: https://huggingface.co/datasets/SEC-bench/SEC-bench","Code: MIT License
+Dataset: MIT License"
+SecEval,K,Both,Common cybersecurity knowledge,"2,189 MCQ",Exact match → accuracy,2023/12,"92.3% accuracy (1,225-question subset) [paper: https://arxiv.org/pdf/2601.21051]; 80.9% accuracy [own evaluation]","Paper: pending
+Code: https://github.com/XuanwuAI/SecEval
+Dataset: https://github.com/XuanwuAI/SecEval","Code: MIT License
+Dataset: CC BY-NC-SA 4.0 license"
+SecLLMHolmes,T,Both,Vulnerability detection and reasoning in C/C++ and Python code,"228 code scenarios (48 hand-crafted, 30 real-world, and 150 with code augmentations)","• LLM-as-a-Judge, exact match → accuracy
+• LLM-as-a-Judge, similarity measure (based on ROUGE-L, cosine similarity or judge) → reasoning score",2023/12,89.5% accuracy (hand-crafted subset) [paper: https://arxiv.org/pdf/2312.12575],"Paper: https://arxiv.org/pdf/2312.12575
+Code and dataset: https://github.com/ai4cloudops/secllmholmes",Code and dataset: GPL v3
+SecQA,K,Both,Common cybersecurity knowledge,"242 MCQ (127 version 1, 115 version 2)",Exact match → accuracy,2023/12,"• 100% accuracy (v1, 5-shot) [paper: https://arxiv.org/pdf/2312.15838]
+• 99% accuracy (v2) [own evaluation]","Paper: https://arxiv.org/pdf/2312.15838
+Dataset: https://huggingface.co/datasets/zefang-liu/secqa",Dataset: CC BY-NC-SA 4.0 license
+SECURE,K,Defensive,Cybersecurity knowledge: recall of ICS attack patterns and mitigations (MAET - MITRE ATT&CK Extraction Task),"1,072 MCQ",Exact match → accuracy,2024/05,95.9% accuracy [own evaluation],"Paper: https://arxiv.org/pdf/2405.20441
+Dataset: https://github.com/aiforsec/SECURE",Dataset: no license information
+SECURE,K,Defensive,Cybersecurity knowledge: recall of ICS weaknesses (CWET - Common Weakness Extraction Task),964 MCQ,Exact match → accuracy,2024/05,96.5% accuracy [own evaluation],"Paper: https://arxiv.org/pdf/2405.20441
+Dataset: https://github.com/aiforsec/SECURE",Dataset: no license information
+SECURE,T,Defensive,Cybersecurity understanding: interpreting provided vulnerability descriptions (KCV - Knowledge test on Common Vulnerabilities),466 boolean questions,Exact match → accuracy,2024/05,89.9% accuracy [own evaluation],"Paper: https://arxiv.org/pdf/2405.20441
+Dataset: https://github.com/aiforsec/SECURE",Dataset: no license information
+SECURE,T,Defensive,Cybersecurity understanding: recognizing missing knowledge without vulnerability context (VOOD - Vulnerability Out-Of-Distribution),466 boolean questions,Exact match → accuracy,2024/05,87.9% accuracy [paper: https://arxiv.org/pdf/2405.20441#page=7],"Paper: https://arxiv.org/pdf/2405.20441
+Dataset: https://github.com/aiforsec/SECURE",Dataset: no license information
+SECURE,T,Defensive,Cybersecurity reasoning: inferring risks from ICS vulnerability details (RERT - Risk Evaluation Reasoning Task),"1,000 tasks",ROUGE-L → mean ROUGE-L,2024/05,62.4% mean ROUGE-L [own evaluation],"Paper: https://arxiv.org/pdf/2405.20441
+Dataset: https://github.com/aiforsec/SECURE",Dataset: no license information
+SECURE,T,Defensive,Cybersecurity reasoning: applying CVSS formulas (CPST - CVSS Problem Solving Task),100 tasks,CVSS score → MAD,2024/05,0.00 MAD [own evaluation],"Paper: https://arxiv.org/pdf/2405.20441
+Dataset: https://github.com/aiforsec/SECURE",Dataset: no license information
+SEvenLLM,K,Defensive,CTI knowledge,"100 MCQ (50 English, 50 Chinese)",Exact match → accuracy,2024/05,100% accuracy [own evaluation],"Paper: https://arxiv.org/pdf/2405.03446
+Code: https://github.com/CSJianYang/SEevenLLM
+Dataset: https://huggingface.co/datasets/Multilingual-Multimodal-NLP/SEVENLLM-Dataset","Code: no license information
+Dataset: Apache License 2.0"
+SEvenLLM,T,Defensive,CTI: understanding and analysing cyber threat reports,"1,200 QA (600 English, 600 Chinese)","ROUGE-L, semantic similarity, or LLM-as-a-Judge → mean similarity",2024/05,81.6% mean semantic similarity [paper: https://arxiv.org/pdf/2405.03446#page=5],"Paper: https://arxiv.org/pdf/2405.03446
+Code: https://github.com/CSJianYang/SEevenLLM
+Dataset: https://huggingface.co/datasets/Multilingual-Multimodal-NLP/SEVENLLM-Dataset","Code: no license information
+Dataset: Apache License 2.0"
+StrongREJECT,R,Defensive,Robustness of LLMs against jailbreak attacks,313 harmful prompts,"LLM-as-a-Judge → jailbreak rate, StrongReject score",2024/02,"• 0.4% jailbreak rate (= non-refusal rate, no jailbreak) [own evaluation]
+• 13.1% jailbreak rate (AIM) [own evaluation]","Paper: https://arxiv.org/pdf/2402.10260
+Code: https://github.com/dsbowen/strong_reject
+Dataset: https://huggingface.co/datasets/walledai/StrongREJECT","Code: MIT License
+Dataset: MIT License"
+TermiBench,I,Offensive,Cyberattack capabilities in multi-host environments,"510 tasks/hosts containing one vulnerable service alongside 0, 1, 3, 5, or 7 benign services",Check for remote-shell acquisition using monitoring scripts → ASR,2025/09,"59.57% ASR (230-target subset, pass@5) [paper: https://arxiv.org/pdf/2509.09207#page=10]","Paper: https://arxiv.org/pdf/2509.09207
+Code and dataset: https://zenodo.org/records/17479793",Code and dataset: CC BY 4.0
+WMDP,K,Both,"Biosecurity, cybersecurity, and chemical security knowledge","3,668 MCQ
+• 1,273 Biology
+• 408 Chemistry
+• 1,987 Cybersecurity",Exact match → accuracy,2024/03,91% accuracy (cyber) [source: https://data.x.ai/2026-04-07-grok-4-20-model-card.pdf#page=5],"Paper: https://arxiv.org/pdf/2403.03218
+Code: https://github.com/centerforaisafety/wmdp
+Dataset: https://huggingface.co/datasets/cais/wmdp","Code: MIT License
+Dataset: MIT License"
